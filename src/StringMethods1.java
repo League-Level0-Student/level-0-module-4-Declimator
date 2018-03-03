@@ -1,3 +1,5 @@
+import java.util.Random;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
@@ -13,11 +15,14 @@ String x="abcdefghijklmnopqrstuvwxyz1234567890";
 		System.out.println(x.charAt(2));
 		// 3. Print the length of your String to the console.
 		//    HINT: .length
+
 		System.out.println(x.length());
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
 for(int y=0;y<x.length();y++) {
-	System.out.println(x.charAt(y));
+	x.charAt(y);
+	if(x.charAt(y)=='s')
+	System.out.println("s is at index " + y);
 }
 		
 		// 5. Pick a char inside your String, and use a loop to determine
